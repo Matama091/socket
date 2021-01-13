@@ -9,12 +9,12 @@ import (
 
 
 func main() {
-	// TCP Listen
 	conn, err := net.Dial("tcp", "localhost:4501")
 	if err != nil {
 		fmt.Println("Listen Error")
 	}
 
+	// 最後に実行
 	defer func() {
 		if err := conn.Close(); err != nil {
 			fmt.Println("Error when TCP Listen closing...", err)
@@ -37,3 +37,8 @@ func main() {
 		// Display packets
 	}
 }
+
+
+
+
+
