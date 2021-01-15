@@ -1,2 +1,2 @@
-# socket-tcp
+# socket
 socketプログラミングの練習
